@@ -24,6 +24,22 @@ public class Trabajo_Figuras {
             x = Integer.parseInt(fila);
             y = Integer.parseInt(colum);
             
+            String[][] matriz =new String[x][y];
+            
+            
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
             
             cont++;
         }
