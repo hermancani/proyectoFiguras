@@ -29,7 +29,11 @@ public class TresPuntos {
     public double calcularDistancia(TresPuntos parametros) {
         double dista_1 =x-parametros.getX();
         double dista_2 =y-parametros.getY();
-        
+        double hipotenusa = Math.sqrt(dista_1*dista_1 + dista_2*dista_2);
+        return hipotenusa;
+    }
+    public String toString(){
+        return "(x= " + getX() + ", y= " + getY() + " )";
     }
 
     
