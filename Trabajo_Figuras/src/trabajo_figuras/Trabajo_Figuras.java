@@ -3,7 +3,8 @@ package trabajo_figuras;
 import java.util.Scanner;
 
 public class Trabajo_Figuras {
- public static void main(String[] args) {
+
+    public static void main(String[] args) {
         Scanner f = new Scanner(System.in);
         while (true) {
             int cont = 0;
@@ -30,10 +31,9 @@ public class Trabajo_Figuras {
                     x = Integer.parseInt(fila);
                     x1 = Integer.parseInt(colum);
 
-
                     System.out.print("Ingrese Punto 2 : ");
                     String punto_2 = f.nextLine();
-                    String[] posici = punto_1.split(",");
+                    String[] posici = punto_2.split(",");
                     String fil = posici[0];
                     String colu = posici[1];
 
@@ -42,20 +42,19 @@ public class Trabajo_Figuras {
 
                     System.out.print("Ingrese Punto 3 : ");
                     String punto_3 = f.nextLine();
-                    String[] posic = punto_1.split(",");
+                    String[] posic = punto_3.split(",");
                     String fi = posic[0];
                     String col = posic[1];
 
                     z = Integer.parseInt(fi);
                     z1 = Integer.parseInt(col);
 
-                    resta1 = x - x1;
-                    resta2 = y - y1;
+                    resta1 = x - y;
+                    resta2 = x - y1;
                     resta3 = z - z1;
                     pot1 = Math.pow(resta1, 2);
                     pot2 = Math.pow(resta2, 2);
                     pot3 = Math.pow(resta3, 2);
-
                     suma1 = pot1 + pot2;
                     suma2 = pot2 + pot3;
                     suma3 = pot3 + pot1;
@@ -65,25 +64,58 @@ public class Trabajo_Figuras {
                     System.out.println("distancia lado1 " + raiz1);
                     System.out.println("distancia lado2 " + raiz2);
                     System.out.println("distancia lado2 " + raiz3);
-                    
-                    if(raiz1==raiz2 && raiz1==raiz3){
+                    System.out.println("--------------------------------");
+                    if (raiz1 == raiz2 && raiz1 == raiz3) {
                         System.out.println("tres lados iguales,equilatero");
-                    }else 
-                        if(raiz1==raiz2 || raiz1==raiz3){
+                    } else if (raiz1 == raiz2 || raiz1 == raiz3) {
                         System.out.println("dos lados iguales,isosceles");
-                    }else{
+                    } else {
                         System.out.println("tres lados diferentes,escaleno");
                     }
+                    System.out.println("--------------------------------");
                     cont++;
 
                     break;
                 case 2:
+                    System.out.print("Ingrese Punto 1 : ");
+                    String punt_1 = f.nextLine();
+                    String[] posicio = punt_1.split(",");
+                    String f1 = posicio[0];
+                    String c1 = posicio[1];
+
+                    x = Integer.parseInt(f1);
+                    x1 = Integer.parseInt(c1);
+
+                    System.out.print("Ingrese Punto 2 : ");
+                    String punt_2 = f.nextLine();
+                    String[] posi = punt_2.split(",");
+                    String f2 = posi[0];
+                    String c2 = posi[1];
+
+                    y = Integer.parseInt(f2);
+                    y1 = Integer.parseInt(c2);
+
+                    System.out.print("Ingrese Punto 3 : ");
+                    String pun_3 = f.nextLine();
+                    String[] po = pun_3.split(",");
+                    String f3 = po[0];
+                    String c3 = po[1];
+
+                    z = Integer.parseInt(f3);
+                    z1 = Integer.parseInt(c3);
+
+                    System.out.print("Ingrese Punto 1 : ");
+                    String pun_4 = f.nextLine();
+                    String[] p = pun_4.split(",");
+                    String f4 = p[0];
+                    String c4 = p[1];
+
+                    z = Integer.parseInt(f4);
+                    z1 = Integer.parseInt(c4);
+
                     break;
             }
         }
     }
-   
-     
-        
 
 }
