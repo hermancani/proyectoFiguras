@@ -77,41 +77,6 @@ public class Trabajo_Figuras {
 
                     break;
                 case 2:
-                    System.out.print("Ingrese Punto 1 : ");
-                    String punt_1 = f.nextLine();
-                    String[] posicio = punt_1.split(",");
-                    String f1 = posicio[0];
-                    String c1 = posicio[1];
-
-                    x = Integer.parseInt(f1);
-                    x1 = Integer.parseInt(c1);
-
-                    System.out.print("Ingrese Punto 2 : ");
-                    String punt_2 = f.nextLine();
-                    String[] posi = punt_2.split(",");
-                    String f2 = posi[0];
-                    String c2 = posi[1];
-
-                    y = Integer.parseInt(f2);
-                    y1 = Integer.parseInt(c2);
-
-                    System.out.print("Ingrese Punto 3 : ");
-                    String pun_3 = f.nextLine();
-                    String[] po = pun_3.split(",");
-                    String f3 = po[0];
-                    String c3 = po[1];
-
-                    z = Integer.parseInt(f3);
-                    z1 = Integer.parseInt(c3);
-
-                    System.out.print("Ingrese Punto 1 : ");
-                    String pun_4 = f.nextLine();
-                    String[] p = pun_4.split(",");
-                    String f4 = p[0];
-                    String c4 = p[1];
-
-                    z = Integer.parseInt(f4);
-                    z1 = Integer.parseInt(c4);
 
                     break;
             }
