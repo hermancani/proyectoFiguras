@@ -8,15 +8,16 @@ public class Trabajo_Figuras {
         Scanner f = new Scanner(System.in);
         while (true) {
             int cont = 0;
-            double x = 0, y = 0, x1 = 0, y1 = 0, z0 = 0, z1 = 0,z2=0,z3=0, resta1,
-                    resta2, resta3,resta4, pot1, pot2, pot3,pot4, suma1, suma2,
-                    suma3,suma4, raiz1,raiz2, raiz3,raiz4;
+            double x = 0, y = 0, x1 = 0, y1 = 0, z0 = 0, z1 = 0, z2 = 0, z3 = 0, resta1,
+                    resta2, resta3, resta4, pot1, pot2, pot3, pot4, suma1, suma2,
+                    suma3, suma4, raiz1, raiz2, raiz3, raiz4;
 
             System.out.println("---------------------");
             System.out.println("  Reconocer Figuras  ");
             System.out.println("---------------------");
             System.out.println("1.- Tres puntos");
             System.out.println("2.- Cuatro puntos");
+            System.out.println("3.- Salir");
             System.out.print("op: ");
             int Punt = Integer.parseInt(f.nextLine());
 
@@ -112,11 +113,11 @@ public class Trabajo_Figuras {
 
                     z2 = Integer.parseInt(f4);
                     z3 = Integer.parseInt(c4);
-                    
+
                     resta1 = x - y;
                     resta2 = x - y1;
                     resta3 = z0 - z2;
-                    resta4 = z1 -z3;
+                    resta4 = z1 - z3;
                     pot1 = Math.pow(resta1, 2);
                     pot2 = Math.pow(resta2, 2);
                     pot3 = Math.pow(resta3, 2);
@@ -125,27 +126,31 @@ public class Trabajo_Figuras {
                     suma2 = pot2 + pot3;
                     suma3 = pot3 + pot4;
                     suma4 = pot4 + pot1;
-                    
+
                     raiz1 = Math.sqrt(suma1);
                     raiz2 = Math.sqrt(suma2);
                     raiz3 = Math.sqrt(suma3);
                     raiz4 = Math.sqrt(suma4);
-                    
+
                     System.out.println("distancia lado1 " + raiz1);
                     System.out.println("distancia lado2 " + raiz2);
                     System.out.println("distancia lado2 " + raiz3);
                     System.out.println("distancio lado4 " + raiz4);
-                    
+
                     System.out.println("--------------------------------");
-                    if (raiz1 == raiz2 && raiz1 == raiz3 && raiz1 ==4) {
+                    if (raiz1 == raiz2 && raiz1 == raiz3 && raiz1 == 4) {
                         System.out.println("cuatro lados iguales,cuadrado");
-                    } else if (raiz1 == raiz2 || raiz1 == raiz3 || raiz1 ==raiz4 ) {
+                    } else if (raiz1 == raiz2 || raiz1 == raiz3 || raiz1 == raiz4) {
                         System.out.println("dos lados iguales,rectangulo");
                     } else {
                         System.out.println("tres lados diferentes,escaleno");
                     }
                     System.out.println("--------------------------------");
-                    
+                    cont++;
+                    break;
+                case 3:
+                    System.out.println("cantidad de figuras: " + cont);
+
                     break;
             }
 
